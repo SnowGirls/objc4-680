@@ -50,6 +50,8 @@
 		5E2D9F501D82851700F61FED /* pthread_machdep.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E2D9F391D82851700F61FED /* pthread_machdep.h */; };
 		5E2D9F511D82851700F61FED /* vproc_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E2D9F3A1D82851700F61FED /* vproc_priv.h */; };
 		5E2D9F591D828B0200F61FED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D9F581D828B0200F61FED /* main.m */; };
+		5E8F52E31D91429300F2DB57 /* objc-env.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8F52E21D91429300F2DB57 /* objc-env.h */; };
+		5E8F52E61D9142C100F2DB57 /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F52E51D9142C100F2DB57 /* Foo.m */; };
 		830F2A740D737FB800392440 /* objc-msg-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 830F2A690D737FB800392440 /* objc-msg-arm.s */; };
 		830F2A750D737FB900392440 /* objc-msg-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 830F2A6A0D737FB800392440 /* objc-msg-i386.s */; };
 		830F2A7D0D737FBB00392440 /* objc-msg-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 830F2A720D737FB800392440 /* objc-msg-x86_64.s */; };
@@ -193,6 +195,9 @@
 		5E2D9F3A1D82851700F61FED /* vproc_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vproc_priv.h; sourceTree = "<group>"; };
 		5E2D9F561D828B0200F61FED /* debug-objc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "debug-objc"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2D9F581D828B0200F61FED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E8F52E21D91429300F2DB57 /* objc-env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-env.h"; path = "runtime/objc-env.h"; sourceTree = "<group>"; };
+		5E8F52E41D9142C100F2DB57 /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		5E8F52E51D9142C100F2DB57 /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 		830F2A690D737FB800392440 /* objc-msg-arm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-msg-arm.s"; path = "runtime/Messengers.subproj/objc-msg-arm.s"; sourceTree = "<group>"; };
 		830F2A6A0D737FB800392440 /* objc-msg-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-msg-i386.s"; path = "runtime/Messengers.subproj/objc-msg-i386.s"; sourceTree = "<group>"; };
 		830F2A720D737FB800392440 /* objc-msg-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-msg-x86_64.s"; path = "runtime/Messengers.subproj/objc-msg-x86_64.s"; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
@@ -473,6 +478,8 @@
 			isa = PBXGroup;
 			children = (
 				5E2D9F581D828B0200F61FED /* main.m */,
+				5E8F52E41D9142C100F2DB57 /* Foo.h */,
+				5E8F52E51D9142C100F2DB57 /* Foo.m */,
 			);
 			path = "debug-objc";
 			sourceTree = "<group>";
@@ -543,6 +550,7 @@
 		8384862A0D6D6ABC00CEA253 /* Project Headers */ = {
 			isa = PBXGroup;
 			children = (
+				5E8F52E21D91429300F2DB57 /* objc-env.h */,
 				830F2A920D73876100392440 /* objc-accessors.h */,
 				838485CF0D6D68A200CEA253 /* objc-config.h */,
 				83BE02E60FCCB24D00661494 /* objc-file.h */,
@@ -585,6 +593,7 @@
 				838485F00D6D68A200CEA253 /* objc-auto.h in Headers */,
 				838485F40D6D68A200CEA253 /* objc-class.h in Headers */,
 				5E2D9F4F1D82851700F61FED /* cpu_capabilities.h in Headers */,
+				5E8F52E31D91429300F2DB57 /* objc-env.h in Headers */,
 				838485F60D6D68A200CEA253 /* objc-config.h in Headers */,
 				838485F80D6D68A200CEA253 /* objc-exception.h in Headers */,
 				83BE02E80FCCB24D00661494 /* objc-file-old.h in Headers */,
@@ -743,6 +752,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8F52E61D9142C100F2DB57 /* Foo.m in Sources */,
 				5E2D9F591D828B0200F61FED /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1140,6 +1150,7 @@
 				5E2D9F5C1D828B0200F61FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		837F67A91A771F63004D34FA /* Build configuration list for PBXAggregateTarget "objc-simulator" */ = {
 			isa = XCConfigurationList;
