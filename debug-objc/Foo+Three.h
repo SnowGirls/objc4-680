@@ -2,6 +2,6 @@
 
 @interface Foo (Three)
 
-- (void)vim;
+- (void)Three;
 
 @end

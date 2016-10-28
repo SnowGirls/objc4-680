@@ -2,13 +2,13 @@
 
 @implementation Foo
 
+@synthesize identity;
+
 - (void)cat {
     NSLog(@"Foo");
 }
 
 @end
-
-
 
 #pragma mark - Category One
 
@@ -19,8 +19,6 @@
 }
 
 @end
-
-
 
 #pragma mark - Category Two
 

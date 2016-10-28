@@ -2,10 +2,11 @@
 
 @interface Foo : NSObject
 
+@property (assign) int identity;
+
 - (void)cat;
 
 @end
-
 
 #pragma mark - Category One
 
@@ -15,8 +16,6 @@
 
 @end
 
-
-
 #pragma mark - Category Two
 
 @protocol FooProtocol <NSObject>
@@ -24,7 +23,6 @@
 - (void)touch;
 
 @end
-
 
 @interface Foo (Two) <FooProtocol>
 

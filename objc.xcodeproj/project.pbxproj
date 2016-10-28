@@ -26,6 +26,7 @@
 		399BC72E1224831B007FBDF0 /* objc-externalref.mm in Sources */ = {isa = PBXBuildFile; fileRef = 399BC72D1224831B007FBDF0 /* objc-externalref.mm */; };
 		39ABD72312F0B61800D1054C /* objc-weak.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ABD71F12F0B61800D1054C /* objc-weak.h */; };
 		39ABD72412F0B61800D1054C /* objc-weak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39ABD72012F0B61800D1054C /* objc-weak.mm */; };
+		5E1E99071D9B92BE00F28EBB /* Foo+Three.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E99061D9B92BE00F28EBB /* Foo+Three.m */; };
 		5E2D9F3B1D82851700F61FED /* _simple.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E2D9F1D1D82851700F61FED /* _simple.h */; };
 		5E2D9F3C1D82851700F61FED /* auto_zone.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E2D9F1E1D82851700F61FED /* auto_zone.h */; };
 		5E2D9F3D1D82851700F61FED /* Block_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E2D9F1F1D82851700F61FED /* Block_private.h */; };
@@ -170,6 +171,9 @@
 		399BC72D1224831B007FBDF0 /* objc-externalref.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-externalref.mm"; path = "runtime/objc-externalref.mm"; sourceTree = "<group>"; };
 		39ABD71F12F0B61800D1054C /* objc-weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-weak.h"; path = "runtime/objc-weak.h"; sourceTree = "<group>"; };
 		39ABD72012F0B61800D1054C /* objc-weak.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-weak.mm"; path = "runtime/objc-weak.mm"; sourceTree = "<group>"; };
+		5E1E99051D9B92BE00F28EBB /* Foo+Three.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foo+Three.h"; sourceTree = "<group>"; };
+		5E1E99061D9B92BE00F28EBB /* Foo+Three.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foo+Three.m"; sourceTree = "<group>"; };
+		5E25B3B21DB074DC00296497 /* Foo_simplified.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Foo_simplified.cpp; sourceTree = "<group>"; };
 		5E2D9F1D1D82851700F61FED /* _simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _simple.h; sourceTree = "<group>"; };
 		5E2D9F1E1D82851700F61FED /* auto_zone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auto_zone.h; sourceTree = "<group>"; };
 		5E2D9F1F1D82851700F61FED /* Block_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block_private.h; sourceTree = "<group>"; };
@@ -477,6 +481,9 @@
 		5E2D9F571D828B0200F61FED /* debug-objc */ = {
 			isa = PBXGroup;
 			children = (
+				5E25B3B21DB074DC00296497 /* Foo_simplified.cpp */,
+				5E1E99051D9B92BE00F28EBB /* Foo+Three.h */,
+				5E1E99061D9B92BE00F28EBB /* Foo+Three.m */,
 				5E2D9F581D828B0200F61FED /* main.m */,
 				5E8F52E41D9142C100F2DB57 /* Foo.h */,
 				5E8F52E51D9142C100F2DB57 /* Foo.m */,
@@ -752,8 +759,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8F52E61D9142C100F2DB57 /* Foo.m in Sources */,
 				5E2D9F591D828B0200F61FED /* main.m in Sources */,
+				5E8F52E61D9142C100F2DB57 /* Foo.m in Sources */,
+				5E1E99071D9B92BE00F28EBB /* Foo+Three.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,8 +2,8 @@
 
 @implementation Foo(Three)
 
-- (void)vim {
-    
+- (void)Three {
+    NSLog(@"Three");
 }
 
 @end
