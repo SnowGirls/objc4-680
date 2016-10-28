@@ -9,10 +9,25 @@
 @end
 
 
-@implementation Foo (Addition)
+
+#pragma mark - Category One
+
+@implementation Foo (One)
 
 - (void)cat {
-    NSLog(@"Addition");
+    NSLog(@"One");
+}
+
+@end
+
+
+
+#pragma mark - Category Two
+
+@implementation Foo (Two)
+
+- (void)cat {
+    NSLog(@"Two");
 }
 
 - (void)more {

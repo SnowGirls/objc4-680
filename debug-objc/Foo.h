@@ -7,6 +7,18 @@
 @end
 
 
+#pragma mark - Category One
+
+@interface Foo (One)
+
+- (void)cat;
+
+@end
+
+
+
+#pragma mark - Category Two
+
 @protocol FooProtocol <NSObject>
 
 - (void)touch;
@@ -14,7 +26,7 @@
 @end
 
 
-@interface Foo (Addition) <FooProtocol>
+@interface Foo (Two) <FooProtocol>
 
 @property (nonatomic, copy) NSString *name;
 
