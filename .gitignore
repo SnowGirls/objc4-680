@@ -1,3 +1,8 @@
+debug-objc/Foo.cpp
+
+
+#################### Mac OS X & Xcode ####################
+
 .DS_Store
 *.swp
 *.lock
