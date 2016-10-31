@@ -12,7 +12,6 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
         Foo *foo = [[Foo alloc] init];
         [foo cat];
         Class cls = [Foo class];
