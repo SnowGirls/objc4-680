@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         Foo *foo = [[Foo alloc] init];
         [foo cat];
         Class cls = [Foo class];
-        NSLog(@"%p", cls);
+        NSLog(@"Pointer of Class Foo: %p", cls);
     }
     return 0;
 }
